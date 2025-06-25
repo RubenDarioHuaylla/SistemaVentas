@@ -3,7 +3,8 @@ const connection = mysql.createConnection({
 host: 'localhost',
 user: 'root',
 password: 'losetodo',
-database: 'db_ventas'
+database: 'db_ventas',
+decimalNumbers: true, // Para manejar números decimales correctamente
 });
 connection.connect((err) => {
     if (err) {
